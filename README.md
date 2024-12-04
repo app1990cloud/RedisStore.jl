@@ -24,12 +24,11 @@ println(result)  # 出力: true (成功した場合)
 ```
 ## 関数詳細
 
-1. RedisPool
+RedisPool
 接続プールを初期化します。
 
 引数:
-
-##### host::String: Redisサーバーのホスト名
+host::String: Redisサーバーのホスト名
 
 port::Int: Redisサーバーのポート番号
 
