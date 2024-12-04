@@ -22,6 +22,14 @@ rSET関数を使用して、指定されたRedisデータベースインデッ�
 result = RedisStore.rSET(pool, 0, "my_key", "my_value")
 println(result)  # 出力: true (成功した場合)
 ```
+第二引数はDBNoです。
+### キーの取得
+rGET関数を使用して、指定されたRedisデータベースインデックスおよびキーから値を取得します。
+```julia
+value = RedisStore.rGET(pool, 0, "my_key")
+println(value)  # 出力: my_value (キーが存在する場合)
+```
+第二引数はDBNoです。
 ## 関数詳細
 
 RedisPool
